@@ -1,6 +1,10 @@
+var user = "x"; 
+var totalturns = 0; 
+var game = "false";
+function performLogic(buttonId, tileId){
+    $(buttonId).hide();
 
-
-
+}
 
 
 
