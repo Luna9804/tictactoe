@@ -1,10 +1,26 @@
-var user = "x"; 
-var totalturns = 0; 
-var game = "false";
+let user = "x"; 
+let currentPlayer = "O";
+let totalturns = 0; 
+let game = false;
 function performLogic(buttonId, tileId){
     $(buttonId).hide();
-
+    totalturns = totalturns + 1;
+    console.log(totalturns);
+    if (currentPlayer === "O"){
+        currentPlayer = "x";
+    }else{
+        currentPlayer ="O";
+    }
+    $(tileId).text(currentPlayer);
+    
 }
+    
+    
+    
+
+    
+
+
 
 
 
